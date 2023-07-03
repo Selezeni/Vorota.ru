@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -11,20 +12,21 @@
     <link rel="stylesheet" href="static/css/fonts.css">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header__top">
             <div class="container">
                 <div class="header__contacts">
-                <a class="header__phone" href="tel:79652078293">+7 965 207 82 93</a>
-                <a class="header__email" href="#">driunea@mail.ru</a>
-                <a class="header__btn" href="#">Бесплатная консультация</a>
+                    <a class="header__phone" href="tel:79652078293">+7 965 207 82 93</a>
+                    <a class="header__email" href="#">driunea@mail.ru</a>
+                    <a class="header__btn" href="#">Бесплатная консультация</a>
                 </div>
             </div>
         </div>
         <div class="header__content">
             <div class="container">
-                    <div class="header__content-inner">
+                <div class="header__content-inner">
                     <div class="header__logo">
                         <a href="#">
                             <img src="static/img/logo.png" alt="">
@@ -32,16 +34,21 @@
                     </div>
                     <nav class="menu">
                         <ul>
-                            <li><a href="#">Информация</a></li>
-                            <li><a href="#">Ворота</a></li>
-                            <li><a href="#">Рольставни</a></li>
-                            <li><a href="#">Шлагбаумы</a></li>
-                            <li><a href="#">Каталог</a></li>
+                            <li><a href="/info">Информация</a></li>
+                            <li><a href="/vorota">Ворота</a></li>
+                            <li><a href="/rolets">Рольставни</a></li>
+                            <li><a href="/barrier">Шлагбаумы</a></li>
+                            <li><a href="/catalog">Каталог</a></li>
                         </ul>
                     </nav>
+                </div>
             </div>
         </div>
-    </div>
     </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 </body>
+
 </html>
