@@ -1,36 +1,67 @@
-*{
+* {
     box-sizing: border-box;
 }
+html,
+body{
+    height: 100%;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
+.header__content{
+    background-color: #fff;
+}
+
 nav a,
-div a{
+div a {
     text-decoration: none;
     display: inline-block;
 }
+
 ul,
-li{
+li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     color: #5e5e5e
 }
-header{
+
+header {
     font-family: 'Roboto', sans-serif;
 }
-.header__top{
+
+.header__top {
     background-color: #303030
 }
-.header__btn{
+
+.header__btn {
     float: right;
     line-height: 36px;
     color: #1b1b1b;
@@ -39,63 +70,75 @@ header{
     font-size: 16px;
     position: relative;
 }
-.header__btn:before{
+
+.header__btn:before {
     content: "\f0b1";
     font-family: 'icomoon';
     position: absolute;
     left: 22px;
     color: #1b1b1b;
 }
-.header__contacts:after{
+
+.header__contacts:after {
     content: "";
     clear: both;
     display: block;
 }
+
 .header__phone,
-.header__email{
+.header__email {
     color: #cbcacb;
     font-size: 14px;
     letter-spacing: 0.25px;
     line-height: 45px;
     position: relative;
 }
-.header__phone{
+
+.header__phone {
     padding-left: 20px;
     padding-right: 30px;
 }
-.header__phone:before{
+
+.header__phone:before {
     content: "\f095";
     font-family: 'icomoon';
     position: absolute;
     left: 0;
     color: #ffc222;
 }
-.header__email{
+
+.header__email {
     padding-left: 24px;
 }
-.header__email:before{
+
+.header__email:before {
     content: "\f003";
     font-family: 'icomoon';
     position: absolute;
     left: 0;
     color: #ffc222;
 }
-.header__content{
+
+.header__content {
     padding: 34px 0px 23px;
 }
-.header__logo img{
+
+.header__logo img {
     width: 180px;
     height: 60px;
     float: left;
 }
-.header__content-inner{
+
+.header__content-inner {
     display: flex;
     justify-content: space-between;
 }
-.menu li{
+
+.menu li {
     display: inline-block;
 }
-.menu a{
+
+.menu a {
     color: #323232;
     font-size: 16px;
     line-height: 36px;
@@ -103,37 +146,101 @@ header{
     padding: 0px 16px;
     transition: all .5s;
 }
-.menu a:hover{
+
+.menu a:hover {
     border-color: #ffc222
 }
-.menu li + li{
+
+.menu li+li {
     padding-left: 10px;
 }
-.footer{
-    background-color:#303030;
+
+.footer {
+    background-color: #303030;
 }
-.footer__content{
+
+.footer__content {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
     justify-content: space-between;
 }
-.copyright p{
+
+.copyright p {
     text-align: center;
     margin-bottom: 0px;
     padding-bottom: 10px;
 }
-.rolets-foto{
-    display: flex;
+
+h2.text {
+    max-width: 1170px;
+    margin: 0 auto;
 }
-.rolets-alutech_foto{
+
+.rolets_title,
+.page__name {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.rolets-text {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.rolets-foto {
     display: flex;
+    max-width: 1170px;
     justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
 }
-.container-type{
+
+.rolets-alutech_foto {
     display: flex;
+    max-width: 1170px;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
 }
-.result-foto{
+
+.container-type {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.foto {
+    max-width: 180px;
+}
+
+.discription {
     display: flex;
+    max-width: 1170px;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+}
+
+.description-result,
+.automatic {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.result-foto {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.barrier {
+    max-width: 1170px;
+    min-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }

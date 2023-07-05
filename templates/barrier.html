@@ -1,9 +1,39 @@
 {% extends 'base.html' %}
-
 {% block title %}
 {% if title %}
-    Ворота.ру - {{title}}
+Ворота.ру - {{title}}
 {% else %}
-    Ворота.ру
+Ворота.ру
 {% endif %}
+{% endblock %}
+{% block content %}
+<div class="page__name">
+    <h1>ШЛАГБАУМЫ</h1>
+</div>
+<div class="barrier">
+    <div class="barrier__type">
+        <img src="../static/img/barrier/an-motors-asb-300x300.jpeg" alt="Шлагбаум">
+        <h2>Автоматический шлагбаум AN-MOTORS ASB 6000 5М</h2>
+        <p class="price">40 500,00 ₽</p>
+    </div>
+    <div class="barrier__type">
+        <img src="../static/img/barrier/an-motors-asb6-X-300x300.jpeg" alt="Шлагбаум">
+        <h2>Шлагбаум AN-MOTORS ASB6 4М</h2>
+        <p class="price">44 940,00 ₽</p>
+    </div>
+    <div class="barrier__type">
+        <img src="../static/img/barrier/cda9ea8f14b5df0bb873af8627482677-300x300.jpeg" alt="">
+        <h2>Шлагбаум CAME GARD 2500 COMBO CLASSICO 2.5 М</h2>
+        <p class="price">38 000,00 ₽</p>
+    </div>
+    <div class="barrier__type">
+        <img src="../static/img/barrier/ALUTECH-BRAVO-BV-5-300x300.png" alt="">
+        <h2>Шлагбаум автоматический ALUTECH BRAVO BV 5</h2>
+        <p class="price">57 500,00 ₽</p>
+    </div>
+</div>
+
+
+
+
 {% endblock %}
