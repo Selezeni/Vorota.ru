@@ -30,7 +30,7 @@ def barrier():
 
 @app.route("/catalog")
 def catalog():
-    return render_template('catalog.html', title='Каталог')
+    return render_template('catalog.html', title='Каталог ')
 
 
 if __name__ == '__main__':
